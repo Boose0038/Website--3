@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smith Law, LLC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+</head>
+<body onload="AOS.init();">
+    <header class="bg-gray-800 text-white p-4 flex items-center justify-between">
+        <img src="logo.png" alt="Smith Law, LLC Logo" class="h-12">
+        <div>
+            <h1 class="text-2xl font-bold">Smith Law, LLC</h1>
+            <p class="text-sm">Injury Lawyers - Millions Recovered on Behalf of Clients</p>
+        </div>
+    </header>
+
+    <nav class="bg-gray-700 text-white p-2 flex justify-around">
+        <a href="#about" class="hover:text-yellow-300">About Us</a>
+        <a href="#services" class="hover:text-yellow-300">Practice Areas</a>
+        <a href="#testimonials" class="hover:text-yellow-300">Testimonials</a>
+        <a href="#contact" class="hover:text-yellow-300">Contact Us</a>
+    </nav>
+
+    <div class="hero">
+        <img src="img_3_46.jpg" alt="Description of the image" class="w-full h-auto object-cover">
+        <h2 class="absolute text-4xl text-white font-bold">Doing Great Things for Others</h2>
+    </div>
+
+    <section class="services bg-gray-100 p-8" id="services">
+        <h2 class="text-3xl font-bold mb-4">Practice Areas</h2>
+        <div class="service bg-white p-4 shadow-md mb-4">
+            <h3 class="text-xl font-semibold">Personal Injury</h3>
+            <p>We ensure maximum compensation for injuries caused by negligence.</p>
+        </div>
+        <div class="service">
+            <h3>Workplace Sexual Harassment</h3>
+            <p>Protecting your rights in workplace harassment cases.</p>
+        </div>
+        <div class="service">
+            <h3>Unpaid Commissions</h3>
+            <p>Fighting for the earnings you deserve.</p>
+        </div>
+    </section>
+
+    <section class="testimonials bg-white p-8" id="testimonials">
+        <h2 class="text-3xl font-bold mb-4">What Our Clients Say</h2>
+        <div class="testimonial bg-gray-100 p-4 shadow-md">
+            <p class="italic">"Excellent! 5 Stars well earned. Louise was polite, listened, and provided sound input and advice. 100% Outstanding, thank you!"</p>
+            <p class="text-right">- R.S., Google Review</p>
+        </div>
+    </section>
+
+    <section class="contact bg-gray-100 p-8" id="contact">
+        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+        <form class="bg-white p-4 shadow-md">
+            <input type="text" placeholder="Full Name" required class="w-full p-2 mb-2 border border-gray-300">
+            <input type="tel" placeholder="Phone Number" required class="w-full p-2 mb-2 border border-gray-300">
+            <input type="email" placeholder="Email Address" required class="w-full p-2 mb-2 border border-gray-300">
+            <textarea placeholder="Message" rows="5" required class="w-full p-2 mb-2 border border-gray-300"></textarea>
+            <button type="submit" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Submit</button>
+        </form>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4">
+        <div class="text-center">
+            <p>&copy; 2025 Smith Law, LLC. All rights reserved.</p>
+            <p>3611 Braselton Highway, Suite 202, Dacula, Georgia 30019</p>
+            <p>Phone: (678) 889-5191</p>
+        </div>
+        <div class="text-center mt-2">
+            <a href="#" class="hover:text-yellow-300">Legal Disclaimer</a> | <a href="#" class="hover:text-yellow-300">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <img src="placeholder.jpg" data-src="actual-image.jpg" alt="Description" class="lazyload">
+
+    <button id="back-to-top" class="hidden fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded">Top</button>
+</body>
+</html>
